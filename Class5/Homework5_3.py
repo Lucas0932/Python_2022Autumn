@@ -13,12 +13,12 @@ tkinter.Label(root, text = "三人座沙發 綠色/灰色/黑色", font = ("Cour
 def add():
     global num
     num+=1
-    tkinter.Label(root, text = num, font = ("Courier", 12, "bold")).pack()
+    tkinter.Label(root, text = num, font = ("Courier", 12, "bold")).pack(side = "right")
 
 def subtract():
     global num
     num-=1
-    tkinter.Label(root, text = num, font = ("Courier", 18, "bold")).pack()
+    tkinter.Label(root, text = num, font = ("Courier", 18, "bold")).pack(side = "right")
 
 mybutton1 = tkinter.Button(root, text = "-",  command = subtract)
 mybutton2 = tkinter.Button(root, text = "+",  command = add)
