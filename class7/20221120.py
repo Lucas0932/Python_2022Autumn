@@ -6,24 +6,24 @@ root = Tk()
 root.title("Class7")
 #設定視窗大小
 root.geometry("300x300+150+200")
-# #更改label文字內容-方法1
-# #建立變數
-# num = 0
-# def clicked():
-#     global num
-#     num+=1
-#     mystringvar.set("click" + str(num))
+#更改label文字內容-方法1
+#建立變數
+num = 0
+def clicked():
+    global num
+    num+=1
+    mystringvar.set("click" + str(num))
 
-# mybutton = Button(root, text = "Click me!",  command = clicked)
-# #建立StringVar
-# mystringvar = StringVar()
-# mystringvar.set("click 0")
-# #建立 計算按鈕次數 label 標籤
-# mylabel = Label(root, textvariable = mystringvar)
-# Label(root, text = "點擊按鈕次數計算", fg = "orange", font = ("Courier", 18, "bold")).pack()
+mybutton = Button(root, text = "Click me!",  command = clicked)
+#建立StringVar
+mystringvar = StringVar()
+mystringvar.set("click 0")
+#建立 計算按鈕次數 label 標籤
+mylabel = Label(root, textvariable = mystringvar)
+Label(root, text = "點擊按鈕次數計算", fg = "orange", font = ("Courier", 18, "bold")).pack()
 
-# mybutton.pack()
-# mylabel.pack()
+mybutton.pack()
+mylabel.pack()
 # #更改label文字內容-方法2
 # num = 0
 # def clicked():
@@ -39,12 +39,12 @@ root.geometry("300x300+150+200")
 
 # mybutton.pack()
 # mylabel.pack()
-# #獲取label文字內容-way1
-# #建立計算按鈕次數 label 標籤
-# mylabel = Label(root, text = "Hello World")
-# mylabel.pack()
-# #get mylabel的文字內容
-# Label(root, text = mylabel["text"]).pack()
+#獲取label文字內容-way1
+#建立計算按鈕次數 label 標籤
+mylabel = Label(root, text = "Hello World")
+mylabel.pack()
+#get mylabel的文字內容
+Label(root, text = mylabel["text"]).pack()
 #獲取label文字內容-way2
 #建立StringVar
 mystringvar = StringVar()

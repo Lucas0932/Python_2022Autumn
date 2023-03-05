@@ -79,10 +79,10 @@ root.geometry("300x300+150+200")
 # Button = Button(root, image = tk_img)
 # Button.pack()
 # root.mainloop()
-# #----------------------------------------------------------------------
-#出現"message test"的普通訊息框
-messagebox.showinfo("showinfo", "message test")
-#出現提問訊息框
-result = messagebox.askquestion("askquestion", "Is it Sunday?")
-print("User click " + result)
+#----------------------------------------------------------------------
+# #出現"message test"的普通訊息框
+# messagebox.showinfo("showinfo", "message test")
+# #出現提問訊息框
+# result = messagebox.askquestion("askquestion", "Is it Sunday?")
+# print("User click " + result)
 #----------------------------------------------------------------------
